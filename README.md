@@ -1,21 +1,8 @@
 # 🚀 K8 Observability + Istio Demo Project
 
-A **production-style Kubernetes observability stack** that includes: -
-**Istio Service Mesh** -- traffic management, mTLS, Envoy sidecars,
-telemetry - **Prometheus** -- metrics scraping from pods, Istio proxies
-& system components - **Grafana** -- real dashboards for mesh, latency,
-throughput & workload health - **Kiali** -- full service-mesh topology
-visualization - **Demo Microservice App** -- routed via Istio Gateway -
-**Kind Local Kubernetes Cluster** -- for 100% reproducible environment -
-**Makefile** -- one-command automation
-
-This project is perfect for: - DevOps & SRE interview prep -
-Observability learning - Service mesh understanding - Local
-experimentation without cloud costs
-
 ------------------------------------------------------------------------
 
-# 📁 Project Structure Explained
+# 📁 Project Structure 
 
     k8-observability-istio-demo/
     ├── README.md                       # Main documentation
@@ -35,12 +22,9 @@ experimentation without cloud costs
     ├── apps/
     │   ├── demo-app.yaml               # Sample microservice deployment & service
     │   └── gateway-and-virtualservice.yaml  # Istio routing
-    └── docs/
-        └── usage.md                    # How to use dashboards & verify traffic
-
 ------------------------------------------------------------------------
 
-# 🔥 How the Whole System Works (Flow Overview)
+# 🔥Flow Overview
 
 ### **1️⃣ Kind Cluster Creation**
 
@@ -149,17 +133,6 @@ Default login: - user: admin - pass: admin
     http://localhost:20001
 
 ------------------------------------------------------------------------
-
-# 🧪 What You Can Test
-
--   Latency, success rate & RPS in Grafana
--   Mesh graph & traffic flow in Kiali
--   PromQL queries in Prometheus
--   Istio routing behavior (modify VirtualService)
--   Fault injection, retries, circuit breaking
-
-------------------------------------------------------------------------
-
 # 🏁 Useful Makefile Commands
 
     make cluster        # Create kind cluster
