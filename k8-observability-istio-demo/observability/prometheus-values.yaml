@@ -1,0 +1,7 @@
+prometheus:
+  prometheusSpec:
+    serviceMonitorSelectorNilUsesHelmValues: false
+kubePrometheusStack:
+  prometheus:
+    prometheusSpec:
+      retention: 10d
