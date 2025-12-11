@@ -170,16 +170,3 @@ Default login: - user: admin - pass: admin
     make destroy        # Delete cluster
 
 ------------------------------------------------------------------------
-
-# 📘 Documentation
-
-See `docs/usage.md` for: - Traffic flow screenshots - Example
-dashboards - PromQL queries - Debugging steps
-
-------------------------------------------------------------------------
-
-# 🎯 Summary
-
-This project gives you: - A full real-world observability stack -
-Hands-on Istio experience - Production-style routing & monitoring -
-Tools used in DevOps interviews & real companies
